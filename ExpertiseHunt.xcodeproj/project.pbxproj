@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		80DF9B5631ABC079D14D84CD /* Pods_ExpertiseHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A7A32BA3BD2ED664217CC4 /* Pods_ExpertiseHunt.framework */; };
+		929F94912D0CF6E30031E3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 929F93E82D0CC4050031E3CF /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		922564DC2D0C7E100019F300 /* ExpertiseHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpertiseHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		929F93E82D0CC4050031E3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B0F17500E44133A1D0DE5572 /* Pods-ExpertiseHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertiseHunt.release.xcconfig"; path = "Target Support Files/Pods-ExpertiseHunt/Pods-ExpertiseHunt.release.xcconfig"; sourceTree = "<group>"; };
+		CC6094032425BB9B5A623CE2 /* Pods-ExpertiseHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertiseHunt.debug.xcconfig"; path = "Target Support Files/Pods-ExpertiseHunt/Pods-ExpertiseHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		D7A7A32BA3BD2ED664217CC4 /* Pods_ExpertiseHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpertiseHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		92964C1B2D0F772B00D6DE0A /* Exceptions for "ExpertiseHunt" folder in "ExpertiseHunt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 922564DB2D0C7E100019F300 /* ExpertiseHunt */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		922564DE2D0C7E100019F300 /* ExpertiseHunt */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				92964C1B2D0F772B00D6DE0A /* Exceptions for "ExpertiseHunt" folder in "ExpertiseHunt" target */,
+			);
 			path = ExpertiseHunt;
 			sourceTree = "<group>";
 		};
@@ -23,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80DF9B5631ABC079D14D84CD /* Pods_ExpertiseHunt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7428FCA2B429AAADC240F468 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC6094032425BB9B5A623CE2 /* Pods-ExpertiseHunt.debug.xcconfig */,
+				B0F17500E44133A1D0DE5572 /* Pods-ExpertiseHunt.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8247D4A9B8E84834FAFC4B21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7A7A32BA3BD2ED664217CC4 /* Pods_ExpertiseHunt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		922564D32D0C7E100019F300 = {
 			isa = PBXGroup;
 			children = (
+				929F93E82D0CC4050031E3CF /* GoogleService-Info.plist */,
 				922564DE2D0C7E100019F300 /* ExpertiseHunt */,
 				922564DD2D0C7E100019F300 /* Products */,
+				7428FCA2B429AAADC240F468 /* Pods */,
+				8247D4A9B8E84834FAFC4B21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 922564EA2D0C7E110019F300 /* Build configuration list for PBXNativeTarget "ExpertiseHunt" */;
 			buildPhases = (
+				52951DCAFA03B3EED5371CFA /* [CP] Check Pods Manifest.lock */,
 				922564D82D0C7E100019F300 /* Sources */,
 				922564D92D0C7E100019F300 /* Frameworks */,
 				922564DA2D0C7E100019F300 /* Resources */,
+				207F4DBAD0CEB5E6C673B3E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +109,6 @@
 				922564DE2D0C7E100019F300 /* ExpertiseHunt */,
 			);
 			name = ExpertiseHunt;
-			packageProductDependencies = (
-			);
 			productName = ExpertiseHunt;
 			productReference = 922564DC2D0C7E100019F300 /* ExpertiseHunt.app */;
 			productType = "com.apple.product-type.application";
@@ -109,10 +152,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929F94912D0CF6E30031E3CF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		207F4DBAD0CEB5E6C673B3E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExpertiseHunt/Pods-ExpertiseHunt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExpertiseHunt/Pods-ExpertiseHunt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExpertiseHunt/Pods-ExpertiseHunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52951DCAFA03B3EED5371CFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpertiseHunt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		922564D82D0C7E100019F300 /* Sources */ = {
@@ -246,6 +332,7 @@
 		};
 		922564EB2D0C7E110019F300 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6094032425BB9B5A623CE2 /* Pods-ExpertiseHunt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -254,12 +341,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ExpertiseHunt/Preview Content\"";
 				DEVELOPMENT_TEAM = GVPSNY4A8Q;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpertiseHunt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -275,6 +366,7 @@
 		};
 		922564EC2D0C7E110019F300 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F17500E44133A1D0DE5572 /* Pods-ExpertiseHunt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -283,12 +375,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ExpertiseHunt/Preview Content\"";
 				DEVELOPMENT_TEAM = GVPSNY4A8Q;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpertiseHunt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
